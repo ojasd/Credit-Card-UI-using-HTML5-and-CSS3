@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card UI</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
+<body>
+<!--Complete form for the Application -->
+<form class="credit-card">
+
+    <!--Form Header-->
+    <div class="form-header">
+        <h4 class="title">Credit Card Details</h4>
+    </div>
+
+    <!--Form Body-->
+    <div class="form-body">
+        <input class ="card-name" type="text" placeholder="Name on Card">
+        <input class ="card-number" type="text" placeholder="Credit Card Number">
+
+        <!--Date field dropdown for year and month-->
+        <div class="date-field">
+            <div class="month">
+                <select name="Month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+            </div>
+            <div class="year">
+                <select name="Year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+        </div>
+
+        <!--Card Verification done here-->
+        <div class="card-verification">
+            <div class="cvv-input">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div class="cvv-details">
+                <p>3 or 4 digits behind your card</p>
+            </div>
+        </div>
+
+        <!--Payments using Submit button and Paypal-->
+        <button type="submit" class="submit-btn"><a href="#">Submit</a></button>
+        <button type="submit" class="paypal-btn"><img class="image" src="paypal_btn.png"/><a href="#"></a></button>
+    </div>
+</form>
+
+<!--Scripts to go here to reduce page load time-->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
